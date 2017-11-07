@@ -10,6 +10,7 @@ class RatingsController < ApplicationController
   # GET /ratings/1
   # GET /ratings/1.json
   def show
+
   end
 
   # GET /ratings/new

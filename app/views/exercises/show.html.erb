@@ -11,7 +11,7 @@
 </p>
 
 <p>
-  <strong>Isforfollower:</strong>
+  <strong>Is the task mean:</strong>
   <%= @exercise.isForFollower %>
 </p>
 
@@ -21,10 +21,12 @@
 </p>
 
 <p>
-  <%= @exercise.ratings.each do |rating|
-    rating.comment
-    end %>
+
+<% @exercise.ratings.each do |rating| %>
+  <%=  rating.comment %>
+       <% end %>
 </p>
+
 
 <%= link_to 'Edit', edit_exercise_path(@exercise) %> |
 <%= link_to 'Back', exercises_path %>
